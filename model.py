@@ -18,6 +18,3 @@ def chat(prompt):
     )
 
     return response.choices[0].message.content
-
-p = chat("Hello, how are you?")
-print(p)
