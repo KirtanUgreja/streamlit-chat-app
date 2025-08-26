@@ -2,12 +2,12 @@ from openai import OpenAI
 
 def chat(prompt):
     client = OpenAI(
-        api_key="ddc-a4f-63601bd0246149138ab646c1dd6dbae4",
+        api_key="Your API hear", # insert your A4F API key here
         base_url="https://api.a4f.co/v1"
     )
 
     response = client.chat.completions.create(
-        model="provider-6/gpt-4o",
+        model="provider-6/gpt-4o", # replace with your model name from A4F model list
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
             {"role": "user", "content": prompt}
